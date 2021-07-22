@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Module2HW6
 {
-    public class SideBySide
+    public class SideBySide : Refrigerator
     {
         public IceMakerAvailability IceMaker { get; set; }
     }

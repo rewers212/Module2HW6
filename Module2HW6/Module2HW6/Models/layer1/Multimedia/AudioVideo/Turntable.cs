@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Module2HW6
 {
-     public abstract class Turntable : AudioVideo
+     public sealed class Turntable : AudioVideo
     {
         public TypeTurntables TypeTurntable { get; set; }
         public Portabilitys Portability { get; set; }

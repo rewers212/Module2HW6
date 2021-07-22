@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Module2HW6
 {
-    public class Refrigerator
+    public abstract class Refrigerator : Appliances
     {
         public TypeCoolingSystems Cooling { get; set; }
     }

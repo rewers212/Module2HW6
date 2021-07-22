@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Module2HW6
 {
-    public abstract class TV : AudioVideo
+    public sealed class TV : AudioVideo
     {
         public DisplayTypes Display { get; set; }
-        public int Diagonal { get; set; }
+        public int Diagonals { get; set; }
     }
 }

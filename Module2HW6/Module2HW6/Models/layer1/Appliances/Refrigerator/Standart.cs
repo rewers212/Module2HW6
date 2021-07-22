@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Module2HW6
 {
-    public class Standart
+    public class Standart : Refrigerator
     {
         public NumberOfCameras Number { get; set; }
     }

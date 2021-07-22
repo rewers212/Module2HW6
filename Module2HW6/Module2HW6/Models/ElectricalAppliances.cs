@@ -8,8 +8,9 @@ namespace Module2HW6
 {
     public abstract class ElectricalAppliances
     {
-        public abstract double Price { get; set; }
-        public abstract string Name { get; set; }
-        public abstract string Firm { get; set; }
+        public double Price { get; set; }
+        public string Name { get; set; }
+        public string Firm { get; set; }
+        public int Power { get; set; }
     }
 }

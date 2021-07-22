@@ -8,7 +8,7 @@ namespace Module2HW6
 {
     public abstract class Telephone : Multimedia
     {
-        public abstract BatteryTypes BatteryType { get; set; }
-        public abstract DisplayTypes DisplayType { get; set; }
+        public BatteryTypes BatteryType { get; set; }
+        public DisplayTypes DisplayType { get; set; }
     }
 }
