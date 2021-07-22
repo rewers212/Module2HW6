@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Module2HW6
 {
-    public abstract class AnalogTelephone : Telephone
+    public class Refrigerator
     {
-        public int Frequency { get; set; }
+        public TypeCoolingSystems Cooling { get; set; }
     }
 }

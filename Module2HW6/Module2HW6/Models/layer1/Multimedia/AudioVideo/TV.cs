@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Module2HW6
 {
-    public abstract class AnalogTelephone : Telephone
+    public abstract class TV : AudioVideo
     {
-        public int Frequency { get; set; }
+        public DisplayTypes Display { get; set; }
+        public int Diagonal { get; set; }
     }
 }

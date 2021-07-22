@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Module2HW6
 {
-    public abstract class AnalogTelephone : Telephone
+    public abstract class Microwave : Appliances
     {
-        public int Frequency { get; set; }
+        public TypeOfManagements Type { get; set; }
     }
 }

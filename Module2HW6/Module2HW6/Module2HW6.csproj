@@ -16,11 +16,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Models\layer1\Appliances\" />
-    <Folder Include="Services\" />
-    <Folder Include="Providers\" />
-    <Folder Include="Comparers\" />
-  </ItemGroup>
-
 </Project>
