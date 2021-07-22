@@ -8,6 +8,9 @@ namespace Module2HW6
 {
     public interface IHomeService
     {
-        public void Add(ref ElectricalAppliances[] ea, int id);
+        void Add(ElectricalAppliances item);
+        void SortByPrice();
+        int GetFullPower();
+        public ElectricalAppliances[] GetAppliances();
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Module2HW6.Extensions
+namespace Module2HW6
 {
     public static class HomeExtensions
     {

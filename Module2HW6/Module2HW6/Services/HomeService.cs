@@ -8,9 +8,44 @@ namespace Module2HW6
 {
     public class HomeService : IHomeService
     {
-        public void Add(ref ElectricalAppliances[] ea, int id)
+        private readonly int _count = 10;
+        private ElectricalAppliances[] _electricalAppliances;
+        public HomeService()
         {
-            throw new NotImplementedException();
+            _electricalAppliances = new ElectricalAppliances[_count];
+        }
+
+        public void Add(ElectricalAppliances item)
+        {
+            for (var i = 0; i < _count; i++)
+            {
+                if (_electricalAppliances[i] == null)
+                {
+                    _electricalAppliances[i] = item;
+                    return;
+                }
+            }
+        }
+
+        public ElectricalAppliances[] GetAppliances()
+        {
+            return _electricalAppliances;
+        }
+
+        public void SortByPrice()
+        {
+            Array.Sort(_electricalAppliances, new PriceComparer());
+        }
+
+        public int GetFullPower()
+        {
+            var sum = 0;
+            foreach (var item in _electricalAppliances)
+            {
+                sum += item.Power;
+            }
+
+            return sum;
         }
     }
 }

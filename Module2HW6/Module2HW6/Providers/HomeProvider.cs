@@ -8,9 +8,10 @@ namespace Module2HW6
 {
     public class HomeProvider : IHomeProvider
     {
+        private ElectricalAppliances[] _ellapp;
         public HomeProvider()
         {
-            ElectricalAppliance = new ElectricalAppliances[]
+            _ellapp = new ElectricalAppliances[]
             {
                 new SmartPhone
                 {
@@ -44,11 +45,50 @@ namespace Module2HW6
                 },
                 new Turntable
                 {
-                    Name
+                    Name = "Sony kx100",
+                    Firm = "Sony",
+                    Portability = Portabilitys.Non,
+                    Power = 15,
+                    Price = 30,
+                    TypeTurntable = TypeTurntables.Video
+                },
+                new Standart
+                {
+                    Name = "Nord",
+                    Cooling = TypeCoolingSystems.Compressor,
+                    Firm = "Nord",
+                    Number = NumberOfCameras.Bicameral,
+                    Power = 500,
+                    Price = 1200
+                },
+                new SideBySide
+                {
+                    Name = "LG",
+                    Firm = "LG",
+                    IceMaker = IceMakerAvailability.Yes,
+                    Power = 800,
+                    Cooling = TypeCoolingSystems.Compressor,
+                    Price = 3000
+                },
+                new Convection
+                {
+                    Name = "Samsung f600",
+                    Firm = "Sumsung",
+                    Power = 1000,
+                    Price = 700,
+                    Type = TypeOfManagements.Sensory
+                },
+                new ElectricGrill
+                {
+                    Name = "Gorenje",
+                    Price = 800,
+                    Power = 1100,
+                    Type = TypeOfManagements.Mechanical,
+                    Firm = "Gorenje"
                 }
-            }
+            };
         }
 
-        public ElectricalAppliances[] ElectricalAppliance => throw new NotImplementedException();
+        public ElectricalAppliances[] ElectricalAppliance => _ellapp;
     }
 }

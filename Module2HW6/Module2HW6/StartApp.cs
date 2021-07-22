@@ -11,8 +11,10 @@ namespace Module2HW6
         {
             var serviceProvider = new ServiceCollection()
                 .AddTransient<IHomeService, HomeService>()
-                .AddTransient<IHomeProvider, HomeProvider>()
-                 .BuildServiceProvider();
+                .AddTransient<HomeProvider>()
+                .AddTransient<Starter>().BuildServiceProvider();
+
+            serviceProvider.GetService<Starter>().Run();
         }
     }
 }

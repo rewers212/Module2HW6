@@ -34,6 +34,5 @@ namespace Module2HW6
                 throw new NotImplementedException();
             }
         }
-
     }
 }

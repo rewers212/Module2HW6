@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Module2HW6
 {
-    public abstract class Convection : Microwave
+    public class Convection : Microwave
     {
     }
 }
