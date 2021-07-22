@@ -2,11 +2,12 @@
 
 namespace Module2HW6
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var start = new StartApp();
+            start.Run();
         }
     }
 }
